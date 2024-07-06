@@ -1,66 +1,19 @@
-## Foundry
+# Question
+- ### we have contract A which the balance of contract is 10 ether and there is a function in it which call selfdestruct() and we pass an payable address to the function. but, there is no deployed contract on that address. what will be happen to the ethers ?
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+<br>
 
-Foundry consists of:
+# Answer
+- ### ethers will be in pending mode and waiting for the contract to be deployed on that address
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+<br>
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+# How ?
+- ### Run :
+    - ```bash
+      # Put your data in .env.example File
+      # Then rename it to .env
+      bash run.sh
+      ```
+- ### Result
+    - ![aaa](./image/result.png)
