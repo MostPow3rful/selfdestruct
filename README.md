@@ -1,5 +1,5 @@
 # Question
-- ### we have contract A which the balance of contract is 10 ether and there is a function in it which call selfdestruct() and we pass an payable address to the function. but, there is no deployed contract on that address. what will be happen to the ethers ?
+- ### we have contract `A` which the balance of contract is `10 ether` and there is a function in it which call `selfdestruct()` and we pass an payable address to the function. but, there is `no deployed contract` on that address. what will be happen to the `ethers` ?
 
 <br>
 
@@ -15,5 +15,6 @@
       # Then rename it to .env
       bash run.sh
       ```
-- ### Result
+
+- ### Result :
     - ![aaa](./image/result.png)
