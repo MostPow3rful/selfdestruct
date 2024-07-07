@@ -12,7 +12,7 @@ echo "$(tput setaf 1)""Address Of Contract [A] Is => "$(tput setaf 4)"[$CONTRACT
 
 echo "$(tput setaf 1)""Balance Of Contract [A] Before calling selfdestruct() => "$(tput setaf 2)"[$(cast balance $CONTRACT_A_ADDRESS --rpc-url $RPC_URL) wei]""$(tput sgr0)"
 
-echo "$(tput setaf 1)""Calling Function In Contract [A] => "$(tput setaf 6)"[start()]""$(tput sgr0)"
+echo "$(tput setaf 1)""Calling Function In Contract [A] => "$(tput setaf 6)"[start(B)]""$(tput sgr0)"
 
 cast send $CONTRACT_A_ADDRESS "start(address)" $CALCULATE_CONTRACT_B_ADDRESS --private-key $PRIVATE_KEY --rpc-url $RPC_URL &>/dev/null
 
