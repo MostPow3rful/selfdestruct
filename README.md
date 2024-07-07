@@ -29,3 +29,19 @@
 
 - #### Result :
     ![aaa](./image/test_2.png)
+
+---
+
+- #### (Q) after calling `selfdestruct()`, the contract which the function is in it, must not be available but in the past tests it is available. how can we implement this to delete the contract and send ethers force ?
+
+    - #### (A) you must call selfdestruct() in the constructor of the contract which is going to send ethers. then pass the address of contract which is going to receive ethers.
+
+- #### Run :
+    - ```bash
+      # Put your data in .env.example File
+      # Then rename it to .env
+      bash test_3.sh
+      ```
+
+- #### Result :
+    ![aaa](./image/test_3.png)
