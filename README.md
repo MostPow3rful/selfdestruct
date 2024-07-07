@@ -12,7 +12,7 @@
       ```
 
 - #### Result :
-    - ![aaa](./image/test_1.png)
+    ![aaa](./image/test_1.png)
 
 ---
 
@@ -28,4 +28,4 @@
       ```
 
 - #### Result :
-    - ![aaa](./image/test_2.png)
+    ![aaa](./image/test_2.png)
